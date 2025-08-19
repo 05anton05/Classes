@@ -11,8 +11,8 @@ namespace Classes
     class Book
     {
 
-        public string title { get; set; }
-        public string autor { get; set; }
+        public string Title { get; set; }
+        public string Autor { get; set; }
         public void BookInfo()
         {
             Console.WriteLine($"Name Of book: {title}, Author: {autor}");

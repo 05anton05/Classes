@@ -8,11 +8,11 @@ namespace Classes
 {
     public class Employee
     {
-        public string name { get; set; }
-        public string position { get; set; }
-        public double salary { get; set; }
+        public string Name { get; set; }
+        public string Position { get; set; }
+        public double Salary { get; set; }
         private int _workDays;
-        public int workDays
+        public int WorkDays
         {
             get { return _workDays; }
             set { _workDays = value; }
@@ -21,12 +21,12 @@ namespace Classes
         {
             if (days < 20)
             {
-               workDays += days + 9;
+               WorkDays += days + 9;
             }
         }
         public void PrintSummary()
         {
-            Console.WriteLine($"\nName: {name}, \nPosition: {position}, \nSalary: {salary}, \nQuantity of work days: {workDays}");
+            Console.WriteLine($"\nName: {Name}, \nPosition: {Position}, \nSalary: {Salary}, \nQuantity of work days: {WorkDays}");
         }
 
     }
