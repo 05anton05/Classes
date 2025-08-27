@@ -31,11 +31,11 @@ worker.AddWorkDays();
 worker.PrintSummary();
 
 //Order
-Order Shop = new Order();
-Shop.AddProducts("Nissan Rogue");
-Shop.PrintOrder();
-Shop.RemoveProduct("Computer");
-Shop.PrintOrder();
+Order shop = new Order();
+shop.AddProducts("Nissan Rogue");
+shop.PrintOrder();
+shop.RemoveProduct("Computer");
+shop.PrintOrder();
 
 
 

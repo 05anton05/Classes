@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
- 
-
     class Book
     {
-
         public string Title { get; set; }
+
         public string Autor { get; set; }
+
         public void BookInfo()
         {
-            Console.WriteLine($"Name Of book: {title}, Author: {autor}");
+            Console.WriteLine($"Name Of book: {Title}, Author: {Autor}");
         }
     }
 }

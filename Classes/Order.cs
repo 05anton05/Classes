@@ -9,7 +9,9 @@ namespace Classes
     class Order
     {
         private List<string> _products;
+
         public bool IsCompleted { get; set; }
+
         public Order()
         {
             _products = new List<string>

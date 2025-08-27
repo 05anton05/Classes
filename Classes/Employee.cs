@@ -9,12 +9,17 @@ namespace Classes
     public class Employee
     {
         public string Name { get; set; }
+
         public string Position { get; set; }
+
         public double Salary { get; set; }
+
         private int _workDays;
+
         public int WorkDays
         {
             get { return _workDays; }
+
             set { _workDays = value; }
         }
         public void AddWorkDays(int days = 1)
