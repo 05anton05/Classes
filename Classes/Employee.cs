@@ -8,13 +8,15 @@ namespace Classes
 {
     public class Employee
     {
+        private int _workDays;
+
         public string Name { get; set; }
 
         public string Position { get; set; }
 
         public double Salary { get; set; }
 
-        private int _workDays;
+       
 
         public int WorkDays
         {

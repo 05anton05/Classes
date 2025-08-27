@@ -5,4 +5,4 @@
  - In this class, we have: methods who add a work day. and mothod who prints the information of the employee. Also used private field.
 3)Class Order
 	 - In this class, we have: methods who add a product to the order, remove a product from the order and print the order details.
-	Designed according to codestyle and codeconvention
+	Designed according to codestyle and codeconvention.
