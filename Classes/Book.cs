@@ -12,7 +12,7 @@ namespace Classes
 
         public string Autor { get; set; }
 
-        public void BookInfo()
+        public void PrintBookInfo()
         {
             Console.WriteLine($"Name Of book: {Title}, Author: {Autor}");
         }

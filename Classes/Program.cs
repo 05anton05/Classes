@@ -7,26 +7,22 @@ using System.Threading.Channels;
 Book book1 = new Book();
 book1.Title = "1984";
 book1.Autor = "George Orwell";
-book1.BookInfo();
+book1.PrintBookInfo();
 
 Book book2 = new Book();
 book2.Title = "Ham on rye";
 book2.Autor = "Charles Bukowski";
-book2.BookInfo();
+book2.PrintBookInfo();
 
 Book book3 = new Book();
 book3. Title = "man for himself";
 book3.Autor = "Erich Fromm";
-book3.BookInfo();
+book3.PrintBookInfo();
 
 //employee
-Employee worker = new Employee();
-worker.Name = "Anton";
-worker.Position = "traine Junior";
-worker.Salary = 300;
-worker.WorkDays = 15;
-
-Console.WriteLine("You must have minimum 25 work days");
+Employee worker = new Employee("Anton", "Junior", 300); ;
+worker.AddWorkDays(5);
+worker.PrintSummary();
 worker.AddWorkDays();
 worker.PrintSummary();
 
