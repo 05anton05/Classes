@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Classes
+﻿namespace Classes
 {
     class Order
     {
@@ -12,16 +6,11 @@ namespace Classes
 
         public bool IsCompleted { get; set; }
 
-        public Order()
+        public Order(List<string> products)
         {
-            _products = new List<string>
-        {
-            "Computer",
-            "Volkswagen Golf",
-            "Smartphone",
-            "Peace to Ukraine"
-        };
+            _products = products;
         }
+
         public void AddProducts(string products)
         {
             _products.Add(products);
@@ -30,8 +19,8 @@ namespace Classes
         public void RemoveProduct(string product)
         {
             _products.Remove(product);
-
         }
+
         public void PrintOrder()
         {
             foreach (string a in _products)
@@ -39,6 +28,5 @@ namespace Classes
                 Console.WriteLine($"Products: {a} ");
             }
         }
-
     }
 }

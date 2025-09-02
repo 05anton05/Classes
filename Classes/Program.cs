@@ -27,7 +27,9 @@ worker.AddWorkDays();
 worker.PrintSummary();
 
 //Order
-Order shop = new Order();
+var products = new List<string> { "Computer", "Phone", "Tablet", "Monitor", "Keyboard" };
+
+Order shop = new Order(products);
 shop.AddProducts("Nissan Rogue");
 shop.PrintOrder();
 shop.RemoveProduct("Computer");
